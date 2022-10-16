@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:white;
+    width: 80%;
+    margin: 0 auto;
+}
+.gh {
+    text-align: center;
+}
+.head,h4,h3{
+    font-size: 25px;
+}
+.gh p{
+    font-size: 20px;
+    text-align:justify;
+}
+.gh #book{
+    margin-left: 5%;
+}
+.gh span{
+    font-size: 20px;
+}
+#back{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 106%;
+    font-weight:80px;
+    font-size: 20px;
+    color: black;
+}
+.gh p a{
+    margin-left: 45%;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body{
+    background-image:("images/college.jpg");
+    background-position: center;
+    background-size: cover;
+}
+ul li {
+    font-size: 25px;
+}

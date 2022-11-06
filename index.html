@@ -11,8 +11,10 @@
         margin: 0;
         padding: 0;
     }
+ 
+    /* Laptop*/
     body{
-        background-color:lightyellow;
+        background-color:rgb(144, 238, 207);
     }
     .header{
         display: flex;
@@ -33,13 +35,14 @@
             color:black;
             word-spacing: 10px;
             text-transform: uppercase;
+        position: absolute;
             margin-top: 28px;
            font-family: 'Times New Roman', Times, serif;
             display: inline-block;
             position: relative;
         }
         .link{
-            margin-left: 48%;
+            margin-left:49%;
             padding-top: 30px;
         }
         .heading h1 {
@@ -60,7 +63,7 @@
     position: relative;
     }
     .link ul li a{
-    color:blue;
+    color:black;
     text-decoration: none;
     font-size:20px;
     text-transform: uppercase;
@@ -71,7 +74,7 @@
     height: 2px;
     background:red;
     display: block;
-    margin: auto;
+    margin: auto;   
     transition: 0.4s;
     }
     .link ul li:hover::after{
@@ -86,20 +89,30 @@
         color: orange;
         z-index: -1;
     }
-    
     .sem{
-        color:blue;
-        margin-left: 45px;
-        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        position: absolute;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .flex{
+        display: inline-block;
+        padding: 5px;
+        font-size: 25px;
+        border: 1px solid black;
+        height: 400px;
+        margin-left: 78%;
+    }
+    .flex a{
+        color: darkviolet;
+    }
+    marquee{
+        height: 350px;
     }
     .sem a{
-        
         text-decoration: none;
-        color: rebeccapurple;
-        font-size:30px;
-    }
-    .sem li{
-        margin-left:5%;
+        color: orangered;
     }
     .bl#og{
         
@@ -110,7 +123,18 @@
         text-transform: capitalize
 
     }
-    
+    #sub{
+        border: 5px solid ;
+        border-radius: 20px;
+        color: red;
+        background-color: orange;
+    }
+    #coall{
+        text-align: center;
+        font-size: 25px;
+        color: tomato;
+        text-decoration: none;
+    }
 
     </style>
 <body>
@@ -124,7 +148,7 @@
                 <li><a href="./subjects ucer.html" target=" _self">syllabus</a></li>     
                 <li><a href="#" target="_self">contact</a></li>
             </ul>
-            </div>
+        </div>
         </div>
         <hr>
         <div class="full page">
@@ -139,14 +163,32 @@
         <br><br>
         
         <div class="sem">
-        <h1 >SEMESTER   3<i id="r">Regulation("2k21")</i></h1>
-        <ul>
-            <li><a href="./subjects ucer.html" target=" _blank _self">SUBJECTS</a></li>
-        </ul>
-        </div>
-        </div><br><br><br><br>
-        <h2>Design&Developed By:RuralTechise</h2>
-        <div class="news evw"></div>
+        <h1>SEMESTER   3<i id="r">
+            Regulation("2k21")</i></h1>
+        <br>
+            <a href="./subjects ucer.html" target=" _blank _self" id="sub">SUBJECTS</a>
+            </div>
+            <div class="flex">
+            <h2>UCER EVENTS</h2>
+            <hr>
+            <p>
+              <a href="./autobotz.html" style="text-decoration: none;"><marquee direction="up"> AutoBotz SYMPOSIYUM</marquee></a>
+            </p>
+            </div>
+            <br>
+            <br><br><br><br>
+            <br><br><br><br>
+            <br><br><br><br>
+            <div id="coall">
+                <div class="copy"><p><a href="">@copyrightAutobotz2<em>K</em>22</a></p>
+                    </div>
+                   <p>
+                        <div id="design"><a href="https://linktr.ee/chandrabal_c">
+                        <i>Design and&nbsp;<i></a></i><i><a href="https://linktr.ee/sevi_rtechise">developed by Rural Techise</a></i></p>
+                        <div id="terms">
+                        <p><a href=""><i>Terms and  policy</i></a></p>
+                        </div>
+                </div>
       
     
 </body>

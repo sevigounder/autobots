@@ -6,27 +6,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C programming Fundamentals</title>
 </head>
+<style>
+    
+    body{
+        background-color: lightblue;
+    }
+    p{
+        text-indent: 40px;
+        text-align: justify;
+        font-size: 25px;
+    }
+    li{
+        font-size: 25px;
+    word-spacing: 2px;
+    line-height: 40px;
+    line-break: normal;
+    }
+    span{
+        font-size: 25px;
+    word-spacing: 2px;
+    line-height: 40px;
+    }
+    code{
+        font-size: 25px;
+    word-spacing: 2px;
+    line-height: 40px;
+    }
+    span{
+        margin-left: 20%;
+    }
+    #function{
+        margin-left: 5%;
+    }
+    #coall{
+        margin: auto;
+
+    }
+    .copy{
+        margin-left: 10%;
+
+    }
+    #design{
+
+        margin-left: 10%;
+    }
+    #terms{
+        margin-left: 10%;
+    }
+    
+</style>
 <body>
  <p>Data Types – Variables – Operations – Expressions and Statements – Conditional Statements – Functions –
       Recursive Functions – Arrays – Single and Multi-Dimensional Arrays.</p>
-      <h3>DataTypes</h3>
-      <h5> C supports different type of the data, each of which may be reperesented differently <br>
-    within the computers memory.The basic data type are listed below. Typically memory requirements are also given .<br>
-(The memory requirements for each data type will determine the permissible range of values for that data type .note that<br>
-the memory requirements  for each data type may from one C compiler to another.</h5>
+      <h2>DataTypes</h2>
+      <p> <li>C supports different type of the data, each of which may be reperesented differently
+    within the computers memory.The basic data type are listed below. Typically memory requirements are also given .
+(The memory requirements for each data type will determine the permissible range of values for that data type .note that
+the memory requirements  for each data type may from one C compiler to another).</li>
+<li>The Data type specifies the size and type of information the variable will store.
+    eg.int,float,char,double. </li>
+    <br><br>
+    example:<br>
+    <span>
+        #include &lt;stdio.h&gt;<br>
+    int main()
+    {<br>
+        int myNum = 5;<br>
+        float myFloatNum = 5.99;<br>
+        char myLetter = 'Rural Techise';<br>
+        printf("%d \n",myNum);<br>
+        printf("%d \n",myFloatNum);<br>
+        printf("%d \n",myLetter);<br>
+        return 0;<br>
+    }
+</span><a href="https://www.w3schools.com/c/c_data_types.php">Read more.</a></p>
+<h4>TYPES.</h4>
+<p>
+    <li>Primary or fundamental  data types</li>
+    <li>Derived data Types</li>
+    <li>User-defined data types</li>
+</p>
+<h3>Primary or fundamental  data types</h3>
+<p>
+    <li>integer(int)</li>
+    <li>Character(char)</li>
+    <li>Floating(float)</li>
+    <li>Double precision floating (Double)</li>
+    <li>Void</li>
+</p>
+  <h3>Derived data types</h3>
+  <p>
+    <li>Arrays</li>
+    <li>Functions</li>
+    <li>Pointers</li>
+    <li>Unions</li>
+    <li>Structures</li>
+  </p>
+    <h3>User-defined data types</h3>
+    <p>The data types that are defined  by the user are called the derived data type or user-defined data type.
+        <li>Union</li>
+        <li>Typedef</li>
+        <li>Enum</li>
+    </p><br><br>
+    <h2>VARIABLES</h2>
+    <P>Variables is a name of area memory it contain a storage area to hold data is also identifiers</P>
+    <h4>Rules of Variables</h4>
+    <li>All Variables names must begin with alphabet or _.
+    </li>
+    <li>The intial should not be number are special character eg.&lt; &, %.</li>
+    <li>no space are allowed in between the variable.   </li>
+    <li>Uppercase letter are disting from the Lowercase letter.</li>
+    <h5>eg.<li>my name - wrong</li>
+    <li>my_name - correct</li></h5>
+    <h3>Operators</a></h3>
+    <ol>
+        <li>Arithmatic Operator</li>
+        <li>Relational Operators</li>
+        <li>Assignment Operations</li>
+        <li>Logical Operators/li>
+        <li>Bitwise Operators</li>
+        <li>Conditional Operators</li>
+        <li>Increment and Decrement Operators</li>
+        <li>Special Operators<a href="https://www.w3schools.com/c/c_operators.php">More info.</a></li>
+        </ol>
+    </p>
+    <h3>Arithmatic Operator</h3>
+    <p></p>
+    <h3>Expressions</h3>
+    <p><li>An expressions repersents a single data item,such  as number or a character .The expressions may consists of 
+        a single entity, such as a constant, a variable, an array element or a reference to a function.
+        <li>Expressions can also reperesent logical conditions that are either true or false. However, in a c the conditions true or false
+            are reperesent by the integer values 1 and 0, respectively.Hence logical-type expressions really reperesent numerical quantities.
+        </li>
+   </li>
+<h5>Types.<br>
+<ul>
+    <li>Arithmatic expreesion</li>
+    <li>Relational expressions</li>
+    <li>Logical expressions</li>
+    <li>Conditional expressions</li>
+    <li></li>
+</ul></h5></p>
+<h3>Statements</h3>
+<p><li>A statements causes the computer to carry out some action.There are three different classes of statements in c.
+    They are expression statements.compound statements and control statements.</li>
+    <li>An expression statements consists of an  expression followed by a semicolon. The execution of an expression statements causes the expression
+        to be evaluated.</li>
+        </p>
+    <h5>Types.<br></h5>
+<p><li>
+    Expreesion statements
+</li>
+<li>Compound statements</li>
+<li>
+    Selection Statements
+</li>
+<li>
+Itreative statements
+</li>
+<li>Jump statements</li></p>
+<h3>Conditional statements</h3>
+<p>
+    <li>If statements</li>
+    <li>If else statements</li>
+    <li>Nested statements</li>
+    <li>Else if ladder satements</li>
+    <li>Switch statements</li>
+</p>
+<h3>Functions</h3>
+<div id="function">
+<p>Defining a function<br>
+Return type function name(parameter list)<br>
+{
+    // body of the function<br>
+}
+eg:
+<br>
+int max(int num;intnum);<br>
+{
+    <br>
+int result;
+<br>
+if(num &gt; num2)
+<br>
+result = num1;
+<br>
+else<br>
+result = num2;
+return result;<br>
+}</p>
+<h3>Recursive Function</h3>
+<p>
+    Recursive function are repeated processes that is recursive function again and again call.
+</p>
+<h5>Program:</h5>
+<p>
+    #include&lt;stdio.h&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    int main()<br>
+    {
+    <br>
+    int n,f;<br>
+    printf("Enter the no whose factorial want to calculate?");<br>
+    scanf("%d",&n);<br>
+    F=fact(n);<br>
+    printf("factorial = "%d",f);<br>
+    }
+    <br>
+    int fact (in+n)<br>
+    {
+        <br>
+        if(n == 0)<br>
+        {
+            <br>
+            return 0;<br>
+        }<br>
+        else if(n == 1)
+        <br>
+        {
+            <br>
+            return 1;<br>
+        }<br>
+        else<br>
+        {
+            <br>
+            Return n * fact (n-1);
+            <br>
+        }<br>
+    }
+</p>
+<h3>Arrays</h3>
+<p><li>Arrays are used to store multiple values in a single varibale instead of declaring separate variable for each value.
+      </li>
+    <li>To Create an array define the data type (like,int) and specify the name of the array followed by brackets[].</li>
+<li>To insert value to its use a comma-separated list inside curely braces.</li>
+<li>eg: int myNumber[]={25,56,67,78};</li><br>
+<h4>Acess the elements of an array</h4>
+<li>To access an array element refer to its index number.</li>
+<li>Array index start with[0] is the first element[1] is the second element .</li>
+<li>This statement accesses the value of  the first element[0] in my numbers.</li>
+<h4>Types:</h4>
+<li>Single dimennsional array</li>
+<li>Multi-Dimensional array</li>
+</p>
+<p>Example:</p>
+<code>#include&lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+int myNumber[]={24,45,75,67};
+<br>
+printf("%d",myNumber[0]);<br>
+return 0;<br>
+}
+<br><br>(or)<br><br><br<br>
+<div align="">
+    #include&lt;stdio.h&gt;<br>
+    int main()<br>
+    {<br>
+        int myNumber[]={45,56,23,46};<br>
+        int i;<br>
+        for(i=0;i&lt;4; i++)<br>
+        printf("%d \n",myNumber[i]);
+    }<br>
+    return 0;
+    <br>
+    <button onclick="window.print()">download</button>
+}
+    </div>
 
-<table border="2">
-    <tr>
-        <td>Data Type</td>
-        <td rowspan="5">sdssdvsd</td>
-        
-        <th colspan="1">Description</th>
-        <th colspan="1">Typically memory requirements</th>
-
-  
-
-</tr>
-</table>
-    
+</div></code><a href="">More info..</a>
+</div><br><br><br><br>
+<div id="coall">
+<div class="copy"><p><a href="">@copyrightAutobotz2<em>K</em>22</a></p>
+    </div>
+   <p>
+        <div id="design"><a href="https://linktr.ee/chandrabal_c">
+        <i>Design and developed by Rural Techise</a></i></p>
+        <div id="terms"></div>
+        <p><a href="https://linktr.ee/sevi_rtechise"><i>Terms and  policy</i></a></p>
+        </div>
+</div>
 </body>
 </html>
